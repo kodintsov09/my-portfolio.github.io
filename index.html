@@ -28,8 +28,12 @@
         margin-bottom: 8em;
       }
     </style>
+    <audio id="music" src="music.mp3" autoplay loop></audio>
+    <script>
+      document.getElementById("music").volume = 0.25;
+    </script>
   </head>
-  <body>
+  <body style="background-color: rgba(0, 0, 0, 0.15)">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand p-0" href="index.html"
@@ -70,27 +74,30 @@
     </nav>
     <div class="container text-center my-5">
       <div class="row">
-        <div class="col-lg-7 mx-auto">
-          <img class="rounded-img" src="avatar.jpg" alt="Zhanibek" />
-          <h1 class="fw-light">Konstantin Odintsov</h1>
+        <div class="col-lg-7 mx-auto" class="avatar">
+          <img class="rounded-img my-5" src="avatar.jpg" alt="Zhanibek" />
+          <h1 class="fw-light my-3">Konstantin Odintsov</h1>
+          <img src="html.webp" width="35" alt="" />
+          <img src="css.png" width="25" alt="" />
+          <img src="javascript.png" width="35" alt="" />
           <p class="lead text-muted">
             Hello this is my portfolio website, Im new FrontEnd JS,HTML,CSS
             developer
           </p>
+          <a
+            href="https://github.com/kodintsov09"
+            target="_blank"
+            class="btn btn-dark"
+          >
+            GitHub
+          </a>
+
           <a
             href="https://Instagram.com/kstdntsv"
             target="_blank"
             class="btn btn-dark"
           >
             Instagram
-          </a>
-
-          <a
-            href="https://www.youtube.com/@KonstantinOdintsov-x9d"
-            target="_blank"
-            class="btn btn-dark"
-          >
-            YouTube
           </a>
         </div>
       </div>
